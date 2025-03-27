@@ -1,0 +1,82 @@
+/* Styles for devices with width up to 600px */
+@media only screen and (max-width: 600px) {
+  /* Working for width: 400px, height: 600px */
+  html,
+  body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  textarea {
+    /* font: inherit; */
+    font-size: small;
+  }
+
+  /* REVISED */
+
+  div.chatbox-toggle {
+    display: flex;
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+
+    z-index: 1;
+  }
+
+  div.chatbox-wrapper {
+    /* REVISED: FULL WIDTH */
+    box-sizing: border-box;
+    display: flex;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  .chatbox-message-header {
+    /* REVISED: LARGER HEADER */
+    border-radius: 0;
+    padding: 1rem 1rem;
+  }
+
+  div.chatbox-message-wrapper.show {
+    /* REVISED: TO FULL WIDTH */
+
+    position: relative;
+    box-sizing: border-box;
+
+    height: inherit;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    /* right: 0;
+    left: 0; */
+
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    flex-grow: 1;
+    border-radius: 0;
+
+    z-index: 9999;
+    transform: none;
+    overflow: visible;
+  }
+
+  /* div.logo-container {
+    display: none;
+    width: 1px;
+    height: 1px;
+  }
+
+  div.second-logo-container {
+    display: none;
+    width: 1px;
+    height: 1px;
+  } */
+}
